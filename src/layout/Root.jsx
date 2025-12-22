@@ -15,11 +15,9 @@ const Root = () => {
 
     return (
         <div>
-            {/* Header এ কার্ট ডাটা পাঠানো হলো */}
             <Header cart={cart} clearCart={clearCart} />
             
             <div className="min-h-[calc(100vh-300px)]">
-                {/* context={...} এখানে দেওয়া বাধ্যতামূলক যাতে Home পেজ এটি পায় */}
                 <Outlet context={{ addToCart }} />
             </div>
             

@@ -6,7 +6,6 @@ import Swal from 'sweetalert2';
 
 const Header = ({ cart = [], clearCart }) => {
 
-    // অর্ডার হ্যান্ডেল করার ফাংশন
     const handleOrder = () => {
         if (cart.length === 0) {
             Swal.fire({
@@ -44,6 +43,8 @@ const Header = ({ cart = [], clearCart }) => {
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/addCoffee">Add Product</NavLink></li>
                         <li><NavLink to="/follow">Follow Us</NavLink></li>
+                        <li><NavLink to="/signin">SignIn </NavLink></li>
+                        <li><NavLink to="/signup">SignUp </NavLink></li>
                     </ul>
                 </div>
                 <Link to="/" className="flex items-center gap-2">
@@ -58,6 +59,8 @@ const Header = ({ cart = [], clearCart }) => {
                     <li><NavLink to="/" className={({isActive}) => isActive ? "border-b-2 border-[#E3B577] text-[#E3B577]" : "hover:text-[#E3B577]"}>Home</NavLink></li>
                     <li><NavLink to="/addCoffee" className={({isActive}) => isActive ? "border-b-2 border-[#E3B577] text-[#E3B577]" : "hover:text-[#E3B577]"}>Add Product</NavLink></li>
                     <li><NavLink to="/follow" className={({isActive}) => isActive ? "border-b-2 border-[#E3B577] text-[#E3B577]" : "hover:text-[#E3B577]"}>Follow Us</NavLink></li>
+                    <li><NavLink to="/signin" className={({isActive}) => isActive ? "border-b-2 border-[#E3B577] text-[#E3B577]" : "hover:text-[#E3B577]"}>SignIn</NavLink></li>
+                    <li><NavLink to="/signup" className={({isActive}) => isActive ? "border-b-2 border-[#E3B577] text-[#E3B577]" : "hover:text-[#E3B577]"}>SignUp</NavLink></li>
                 </ul>
             </div>
 

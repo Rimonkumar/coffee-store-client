@@ -6,7 +6,6 @@ import { AuthContext } from '../context/AuthContext';
 const SignUp = () => {
     const [error, setError] = useState('');
     
-    // Using the new 'use' hook (React 19) or use useContext(AuthContext)
     const { createUser } = use(AuthContext);
 
     const handleSignUp = (e) => {
