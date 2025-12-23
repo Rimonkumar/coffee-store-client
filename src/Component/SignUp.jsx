@@ -27,7 +27,7 @@ const SignUp = () => {
             const newUser = { name, email, photoURL, uid: result.user.uid };
 
             // 3. Save to your local backend
-            fetch(`http://localhost:3000/users`, {
+            fetch(`https://coffee-store-server-lemon-chi.vercel.app/users`, {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(newUser)

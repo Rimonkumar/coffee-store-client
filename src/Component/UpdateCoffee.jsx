@@ -27,7 +27,7 @@ const UpdateCoffee = () => {
         const updatedCoffee = { name, quentity, supplier, taste, price, details, photo };
 
         // Send data to the server
-        fetch(`http://localhost:3000/coffees/${_id}`, {
+        fetch(`https://coffee-store-server-lemon-chi.vercel.app/coffees/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
